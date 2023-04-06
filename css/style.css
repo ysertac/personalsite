@@ -22,3 +22,54 @@ nav.gunduz {
   background: linear-gradient(to left, white, white); }
   nav.gunduz .nav-link {
     color: darkblue !important; }
+
+#banner {
+  height: 100vh; }
+  #banner #carouselExample {
+    height: 100vh; }
+    #banner #carouselExample img {
+      height: 91vh;
+      filter: blur(10px); }
+
+.swiper {
+  width: 80vw;
+  height: 80vh;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: -40vw;
+  margin-top: -37vh; }
+  .swiper .swiper-slide {
+    background-position: center;
+    background-size: cover; }
+    .swiper .swiper-slide .imgBox {
+      position: absolute;
+      width: 80vw;
+      height: 80vh; }
+      .swiper .swiper-slide .imgBox img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover; }
+    .swiper .swiper-slide .content {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      height: 80px;
+      background: #fff;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      .swiper .swiper-slide .content h2 {
+        font-size: 1.5rem; }
+        .swiper .swiper-slide .content h2 span {
+          font-size: 1.2rem;
+          color: darkblue; }
+  .swiper-button-next, .swiper-button-prev {
+    display: none; }
+
+.carousel-item {
+  transition-duration: 1.75s; }
