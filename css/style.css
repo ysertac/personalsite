@@ -23,6 +23,13 @@ nav.gunduz {
   nav.gunduz .nav-link {
     color: darkblue !important; }
 
+.nav-item {
+  padding-right: 10px; }
+  .nav-item a.active {
+    border-bottom: 2px solid black; }
+  .nav-item a:hover {
+    border-bottom: 2px solid brown; }
+
 #banner {
   height: 100vh; }
   #banner #carouselExample {
@@ -73,3 +80,52 @@ nav.gunduz {
 
 .carousel-item {
   transition-duration: 1.75s; }
+
+#content {
+  width: 100%; }
+  #content .my_icons {
+    display: flex;
+    align-items: center; }
+    #content .my_icons div {
+      font-size: 2.5rem;
+      color: black; }
+      #content .my_icons div.ficon {
+        background: linear-gradient(45deg, aqua, blue);
+        width: 25%; }
+        #content .my_icons div.ficon div {
+          margin-top: 4rem;
+          margin-bottom: 4rem;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center; }
+      #content .my_icons div.sicon {
+        background: linear-gradient(45deg, lime, greenyellow);
+        width: 25%; }
+        #content .my_icons div.sicon div {
+          margin-top: 4rem;
+          margin-bottom: 4rem;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center; }
+      #content .my_icons div.thicon {
+        background: linear-gradient(45deg, aqua, blue);
+        width: 25%; }
+        #content .my_icons div.thicon div {
+          margin-top: 4rem;
+          margin-bottom: 4rem;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center; }
+      #content .my_icons div.licon {
+        background: linear-gradient(45deg, lime, greenyellow);
+        width: 25%; }
+        #content .my_icons div.licon div {
+          margin-top: 4rem;
+          margin-bottom: 4rem;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center; }

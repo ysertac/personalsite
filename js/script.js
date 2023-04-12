@@ -7,6 +7,21 @@ let modGece = () => {
         content[i].querySelector('h2').style.color = '#fff'; 
         content[i].querySelector('h2 span').style.color = 'lime';
     }
+    for (let i = 0; i < navLink.length; i++) {
+        if (navLink[i].classList.contains('active')) {
+            navLink[i].style.borderBottom = '2px solid orange';
+        }
+        navLink[i].addEventListener('mouseover', () => {
+            if (!(navLink[i].classList.contains('active'))) {
+                navLink[i].style.borderBottom = '2px solid aqua';
+            }
+        })
+        navLink[i].addEventListener('mouseout', () => {
+            if (!(navLink[i].classList.contains('active'))) {
+                navLink[i].style.borderBottom = 'none';
+            }
+        })
+    }
 }
 
 let modGunduz = () => {
@@ -17,5 +32,20 @@ let modGunduz = () => {
         content[i].style.background = '#fff';
         content[i].querySelector('h2').style.color = '#000'; 
         content[i].querySelector('h2 span').style.color = 'darkblue';
+    }
+    for (let i = 0; i < navLink.length; i++) {
+        if (navLink[i].classList.contains('active')) {
+            navLink[i].style.borderBottom = '2px solid black';
+        }
+        navLink[i].addEventListener('mouseover', () => {
+            if (!(navLink[i].classList.contains('active'))) {
+                navLink[i].style.borderBottom = '2px solid brown';
+            }
+        })
+        navLink[i].addEventListener('mouseout', () => {
+            if (!(navLink[i].classList.contains('active'))) {
+                navLink[i].style.borderBottom = 'none';
+            }
+        })
     }
 }

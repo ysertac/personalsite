@@ -23,7 +23,6 @@ var swiper = new Swiper(".mySwiper", {
     },
   });
 
-
 myCarousel.addEventListener('slide.bs.carousel', function(e) {
   if (e.direction == 'left') {
     document.querySelector('.swiper-button-next').click();

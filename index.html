@@ -14,6 +14,7 @@
     <title>Document</title>
 </head>
 <body class="gunduz">
+    <!-- header -->
     <header>
         <nav class="navbar navbar-expand-lg bg-body-tertiary gunduz">
             <div class="container">
@@ -50,29 +51,30 @@
             </div>
         </nav>
     </header>
-
+    <!-- header end -->
+    
     <main>
       <!-- Banner Section -->
       <div id="banner">
         <!-- carousel -->
-        <div id="carouselExample" class="carousel slide">
+        <div id="carouselExample" class="carousel slide" data-bs-ride="carousel" data-bs-pause="false">
           <div class="carousel-inner">
-            <div class="carousel-item active" >
+            <div class="carousel-item active" data-bs-interval="4000">
               <img src="img/8.jpg" class="d-block w-100" alt="...">
             </div>
-            <div class="carousel-item" >
+            <div class="carousel-item" data-bs-interval="4000">
               <img src="img/7.jpg" class="d-block w-100" alt="...">
             </div>
-            <div class="carousel-item" >
+            <div class="carousel-item" data-bs-interval="4000">
               <img src="img/6.jpg" class="d-block w-100" alt="...">
             </div>
-            <div class="carousel-item" >
+            <div class="carousel-item" data-bs-interval="4000">
               <img src="img/5.jpg" class="d-block w-100" alt="...">
             </div>
-            <div class="carousel-item" >
+            <div class="carousel-item" data-bs-interval="4000">
               <img src="img/4.jpg" class="d-block w-100" alt="...">
             </div>
-            <div class="carousel-item" >
+            <div class="carousel-item" data-bs-interval="4000">
               <img src="img/3.jpg" class="d-block w-100" alt="...">
             </div>
           </div>
@@ -144,8 +146,37 @@
         <!-- Swiper End -->
       </div>
       <!-- Banner End -->
+      <!-- Content -->
+      <div id="content">
+          <div class="my_icons">
+            <div class="ficon o1">
+              <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>HTML5</h2>
+              </div>
+            </div>
+            <div class="sicon o2">
+              <div>
+                <i class="fa-brands fa-css3"></i>
+                <h2>CSS</h2>
+              </div>
+            </div>
+            <div class="thicon o3">
+              <div>
+                <i class="fa-brands fa-square-js"></i>
+                <h2>JavaScript</h2>
+              </div>
+            </div>
+            <div class="licon o4">
+              <div>
+                <i class="fa-brands fa-java"></i>
+                <h2>Java</h2>
+              </div>
+            </div>
+          </div>
+      </div>
+      <!-- Content End -->
     </main>
-
 
 
 
@@ -155,5 +186,6 @@
     <script src="https://code.jquery.com/jquery-3.6.3.js"></script>
     <script src="js/script.js"></script>
     <script src="js/slider.js"></script>
+    <script src="js/content.js"></script>
 </body>
 </html>
