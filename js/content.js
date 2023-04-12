@@ -159,4 +159,4 @@ setInterval(function() {
         console.log("OK");
     }
 
-}, 1000);
+}, 2500);
