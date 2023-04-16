@@ -83,12 +83,22 @@ nav.gunduz {
 
 #content {
   width: 100%; }
+  #content .baslik {
+    text-align: center;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #5b3ec7; }
+  #content .bosluk {
+    height: .4rem;
+    background: linear-gradient(45deg, blue, red);
+    margin: 0 auto 2rem;
+    text-align: center; }
   #content .my_icons {
     display: flex;
     align-items: center; }
     #content .my_icons div {
-      font-size: 2.5rem;
-      color: black; }
+      font-size: 2.5rem; }
       #content .my_icons div.ficon {
         background: linear-gradient(45deg, aqua, blue);
         width: 25%; }

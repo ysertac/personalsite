@@ -22,6 +22,8 @@ let modGece = () => {
             }
         })
     }
+    myIconsContent.classList.remove('gunduz');
+    myIconsContent.classList.add('gece');
 }
 
 let modGunduz = () => {
@@ -48,4 +50,6 @@ let modGunduz = () => {
             }
         })
     }
+    myIconsContent.classList.remove('gece');
+    myIconsContent.classList.add('gunduz');
 }

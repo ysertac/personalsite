@@ -7,6 +7,7 @@ let myCarousel = document.querySelector('#carouselExample');
 let carouselControlPrev = document.querySelectorAll('.carousel-control-prev');
 let carouselControlNext = document.querySelectorAll('.carousel-control-next');
 let navLink = document.querySelectorAll('.nav-item a');
+let myIconsContent = document.querySelector('#content');
 let myIcons = document.querySelector('#content .my_icons');
 let ficon = myIcons.querySelector('.ficon');
 let sicon = myIcons.querySelector('.sicon');
