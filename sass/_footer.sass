@@ -1,0 +1,128 @@
+footer
+    background: linear-gradient(135deg, cyan, whitesmoke, grey)
+    color: black
+    margin-top: 10rem
+    font-weight: 600
+
+    .container
+        display: grid
+        grid-template-columns: repeat(3, 1fr)
+
+    #footer_
+        &1
+            text-align: justify
+            padding: 2rem 2rem 0
+
+        &2
+            text-align: center
+            padding: 2rem 0
+
+        &3
+            padding: 2rem 2rem
+
+            div
+                display: flex
+                justify-content: space-between
+
+                a
+                    i
+                        font-size: 2.3rem
+                        color: black
+                        transition: 1s
+
+                        &:hover
+                            color: darkblue
+
+        &4
+            grid-column: 1/ span 3
+            text-align: center
+
+    .btna
+        position: relative
+        color: #1670f0
+        padding: 0.3rem .7rem
+        font-size: 1.5rem
+        letter-spacing: .1rem
+        text-decoration: none
+        background: linear-gradient(to right, aqua, antiquewhite)
+        box-shadow: 0 1rem 2.5rem rgba(0, 0, 0, 0.5)
+        /* &:hover
+            span
+                &:nth-child(1)
+                    animation: animate1 2s linear infinite
+                &:nth-child(2)
+                    animation: animate2 2s linear infinite
+                &:nth-child(3)
+                    animation: animate3 2s linear infinite
+                &:nth-child(4)
+                    animation: animate4 2s linear infinite */
+
+        &::before
+            content: ''
+            position: absolute
+            top: 0
+            left: 0
+            height: 100%
+            width: 30%
+            background: rgba(0, 0, 0, .05)
+
+        span
+            &:nth-child(1)
+                position: absolute
+                top: 0
+                left: 0
+                width: 100%
+                height: .1rem
+                background: linear-gradient(to right, antiquewhite, #0c002b)
+                animation: animate1 1s linear alternate infinite
+
+            &:nth-child(2)
+                position: absolute
+                top: 0
+                right: 0
+                width: .1rem
+                height: 100%
+                background: linear-gradient(to bottom, antiquewhite, #0c002b)
+                animation: animate2 1s linear alternate infinite
+
+            &:nth-child(3)
+                position: absolute
+                bottom: 0
+                left: 0
+                width: 100%
+                height: .1rem
+                background: linear-gradient(to left, antiquewhite, #0c002b)
+                animation: animate3 1s linear alternate infinite
+
+            &:nth-child(4)
+                position: absolute
+                bottom: 0
+                left: 0
+                width: .1rem
+                height: 100%
+                background: linear-gradient(to top, antiquewhite, #0c002b)
+                animation: animate4 1s linear alternate infinite
+
+@keyframes animate1
+    0%
+        transform: translateX(-100%)
+    100%
+        transform: translateX(100%)
+
+@keyframes animate2
+    0%
+        transform: translateY(-100%)
+    100%
+        transform: translateY(100%)
+
+@keyframes animate3
+    0%
+        transform: translateX(100%)
+    100%
+        transform: translateX(-100%)
+
+@keyframes animate4
+    0%
+        transform: translateY(100%)
+    100%
+        transform: translateY(-100%)

@@ -68,19 +68,6 @@
     //padding-top: 2rem
     //padding-bottom: 2rem
 
-    .baslik
-        text-align: center
-        font-size: 2.5rem
-        text-transform: uppercase
-        font-weight: 700
-        color: lighten(#482fa3, 10%)
-
-    .bosluk
-        height: .4rem
-        background: linear-gradient(45deg, blue, red)
-        margin: 0 auto 2rem
-        text-align: center
-
     .my_icons
         display: flex
         align-items: center
@@ -135,3 +122,28 @@
                     flex-direction: column
                     justify-content: center
                     align-items: center
+
+#profile
+    padding-bottom: 2rem
+
+    #iconpart
+        display: grid
+        grid-template-columns: repeat(3, 1fr)
+        align-items: center
+        justify-items: center
+
+        .first
+            background: linear-gradient(45deg, aqua, blue)
+            margin: 3rem
+
+            .second
+                background: linear-gradient(45deg, lime, greenyellow)
+                width: 10rem
+                height: 10rem
+                display: flex
+                justify-content: center
+                align-items: center
+                transition: 2s
+
+                &:hover
+                    rotate: 45deg

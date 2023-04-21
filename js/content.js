@@ -1,5 +1,5 @@
 setInterval(function() {
-    if (myIconsContent.classList.contains('gunduz')) {
+    if (body.classList.contains('gunduz')) {
         ficon.style.color = 'black';
         sicon.style.color = 'black';
         thicon.style.color = 'black';
