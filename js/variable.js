@@ -1,5 +1,9 @@
 let body = document.querySelector('body');
 let nav = document.querySelector('nav');
+let footer = document.querySelector('footer');
+let socialIcons = footer.querySelectorAll('a i');
+let footerButton = footer.querySelector('.btna');
+let footerSpan = footer.querySelectorAll('span');
 let content = document.querySelectorAll('.swiper .content');
 let swiperSlide = document.querySelectorAll('.swiper .swiper-slide');
 let carouselItem = document.querySelectorAll('.carousel-item');
@@ -18,7 +22,3 @@ let baslikalti = document.querySelectorAll('.bosluk');
 let firstDiv = document.querySelectorAll('.first');
 let secondDiv = document.querySelectorAll('.second');
 let svg = document.querySelectorAll('svg');
-let footer = document.querySelector('footer');
-let socialIcons = footer.querySelectorAll('a i');
-let footerButton = footer.querySelector('.btna');
-let footerSpan = footer.querySelectorAll('span');
