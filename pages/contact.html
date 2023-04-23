@@ -50,17 +50,40 @@
     <section id="mycontact">
       <div class="form_box">
         <div class="form_value">
-          <form action="">
+          <form action="https://formspree.io/f/xqkowgql" method="POST">
             <h2>Bana Ulaşın</h2>
             <div class="inputbox">
               <ion-icon name="mail-outline"></ion-icon>
-              <input type="email" required />
+              <input name="email" type="email" required />
               <label for="">Eposta Adresiniz</label>
             </div>
             <div class="inputbox">
-              <ion-icon name="text-outline"></ion-icon>
-              <input type="text" required />
+              <ion-icon name="people-outline"></ion-icon>
+              <input name="fname" type="text" required />
               <label for="">Adınız Soyadınız</label>
+            </div>
+            <div class="inputbox">
+              <ion-icon name="call-outline"></ion-icon>
+              <input name="mobile" type="number" required />
+              <label for="">Telefon Numaranız</label>
+            </div>
+            <div class="inputbox">
+              <ion-icon name="text-outline"></ion-icon>
+              <input name="subject" type="text" required />
+              <label for="">Konu</label>
+            </div>
+            <div class="textarea">
+              <label for="">Mesajınızı yazınız:</label>
+              <textarea name="message" id="" cols="30" rows="10"></textarea>
+            </div>
+            <div class="buttonarea">
+              <button type="submit" class="btna">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                GÖNDER
+              </button>
             </div>
           </form>
         </div>
