@@ -49,78 +49,110 @@ svg {
   margin: auto;
   width: 5rem; }
 
-section {
+section#mycontact {
   background: url("../img/1.jpg") no-repeat;
   background-position: center;
-  background-size: cover; }
-  section#mycontact {
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 91vh;
+  width: 100%; }
+  section#mycontact .form_box {
+    position: relative;
+    width: 50%;
+    height: 80%;
+    background: transparent;
+    border: 2px solid white;
+    border-radius: 1rem;
+    backdrop-filter: blur(0.3rem);
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 91vh;
-    width: 100%; }
-    section#mycontact .form_box {
-      position: relative;
-      width: 50%;
-      height: 80%;
-      background: transparent;
-      border: 2px solid white;
-      border-radius: 1rem;
-      backdrop-filter: blur(0.3rem);
+    color: white; }
+    section#mycontact .form_box .form_value form {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      justify-content: center; }
+      section#mycontact .form_box .form_value form h2 {
+        font-size: 1.5rem;
+        text-align: center;
+        grid-column: 1 / span 2; }
+      section#mycontact .form_box .form_value form .inputbox {
+        position: relative;
+        margin: 1.5rem 1.5rem 1.5rem 0;
+        width: 17.5rem;
+        border-bottom: .1rem solid #fff; }
+        section#mycontact .form_box .form_value form .inputbox ion-icon {
+          position: absolute;
+          right: 8px;
+          top: 17px;
+          font-size: 1.1rem; }
+        section#mycontact .form_box .form_value form .inputbox label {
+          position: absolute;
+          top: 50%;
+          left: .25rem;
+          transform: translateY(-50%);
+          transition: .5s; }
+        section#mycontact .form_box .form_value form .inputbox input {
+          width: 100%;
+          height: 2.5rem;
+          background: transparent;
+          border: none;
+          outline: none;
+          padding: 0 1.5rem 0 .25rem;
+          color: lime; }
+          section#mycontact .form_box .form_value form .inputbox input:focus ~ label,
+          section#mycontact .form_box .form_value form .inputbox input:valid ~ label {
+            top: -5px; }
+      section#mycontact .form_box .form_value form .textarea {
+        position: relative;
+        grid-column: 1/ span 2;
+        margin: 1.5rem 1.5rem 1.5rem 0; }
+        section#mycontact .form_box .form_value form .textarea textarea {
+          width: 100%;
+          background: transparent;
+          height: 5rem;
+          max-height: 5rem;
+          color: lime;
+          border: 1px solid white; }
+      section#mycontact .form_box .form_value form .buttonarea {
+        grid-column: 1/ span 2;
+        text-align: center;
+        margin-top: 2rem; }
+
+section#contact_info {
+  position: relative; }
+  section#contact_info div.cmain {
+    background: url("../img/10.jpg") no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    font-size: 1.5rem;
+    z-index: -1; }
+    section#contact_info div.cmain::before {
+      content: " ";
+      background: rgba(0, 0, 0, 0.4);
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1; }
+    section#contact_info div.cmain .container {
       display: flex;
-      justify-content: center;
+      justify-content: space-between;
       align-items: center;
-      color: white; }
-      section#mycontact .form_box .form_value form {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        justify-content: center; }
-        section#mycontact .form_box .form_value form h2 {
-          font-size: 1.5rem;
-          text-align: center;
-          grid-column: 1 / span 2; }
-        section#mycontact .form_box .form_value form .inputbox {
-          position: relative;
-          margin: 1.5rem 1.5rem 1.5rem 0;
-          width: 17.5rem;
-          border-bottom: .1rem solid #fff; }
-          section#mycontact .form_box .form_value form .inputbox ion-icon {
-            position: absolute;
-            right: 8px;
-            top: 17px;
-            font-size: 1.1rem; }
-          section#mycontact .form_box .form_value form .inputbox label {
-            position: absolute;
-            top: 50%;
-            left: .25rem;
-            transform: translateY(-50%);
-            transition: .5s; }
-          section#mycontact .form_box .form_value form .inputbox input {
-            width: 100%;
-            height: 2.5rem;
-            background: transparent;
-            border: none;
-            outline: none;
-            padding: 0 1.5rem 0 .25rem;
-            color: lime; }
-            section#mycontact .form_box .form_value form .inputbox input:focus ~ label,
-            section#mycontact .form_box .form_value form .inputbox input:valid ~ label {
-              top: -5px; }
-        section#mycontact .form_box .form_value form .textarea {
-          position: relative;
-          grid-column: 1/ span 2;
-          margin: 1.5rem 1.5rem 1.5rem 0; }
-          section#mycontact .form_box .form_value form .textarea textarea {
-            width: 100%;
-            background: transparent;
-            height: 5rem;
-            max-height: 5rem;
-            color: lime;
-            border: 1px solid white; }
-        section#mycontact .form_box .form_value form .buttonarea {
-          grid-column: 1/ span 2;
-          text-align: center;
-          margin-top: 2rem; }
+      color: greenyellow;
+      font-weight: 750;
+      padding: 10rem 0; }
+      section#contact_info div.cmain .container div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; }
+        section#contact_info div.cmain .container div i {
+          font-size: 1.7rem; }
 
 footer.gunduz {
   background: linear-gradient(135deg, cyan, whitesmoke, grey);
