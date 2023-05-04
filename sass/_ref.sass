@@ -1,0 +1,118 @@
+section
+    &#refst
+        display: grid
+        justify-content: center
+        align-content: center
+        grid-template-columns: repeat(3, 1fr)
+    
+        .refbox
+            position: relative
+            width: 400px
+            height: 400px
+            display: flex
+            justify-content: center
+            align-items: center
+            margin: 40px
+            background: #060c21
+            transition: .5s
+
+            &:hover
+                height: 500px
+
+                .refimgbox
+                    img
+                        opacity: 1
+
+                .refcontent
+                    opacity: 1
+
+            &::before
+                content: ''
+                position: absolute
+                top: -5px
+                left: -5px
+                right: -5px
+                bottom: -5px
+                background: #fff
+                z-index: -1
+
+            &::after
+                content: ''
+                position: absolute
+                top: -5px
+                left: -5px
+                right: -5px
+                bottom: -5px
+                background: #fff
+                z-index: -1
+                filter: blur(40px)
+
+            &:nth-child(1)::before,
+            &:nth-child(2)::before,
+            &:nth-child(3)::before,
+            &:nth-child(1)::after,
+            &:nth-child(2)::after,
+            &:nth-child(3)::after
+                background: linear-gradient(235deg, #89ff00, #010615, #00bcd4)
+                
+
+            &:nth-child(4)::before,
+            &:nth-child(5)::before,
+            &:nth-child(6)::before,
+            &:nth-child(4)::after,
+            &:nth-child(5)::after,
+            &:nth-child(6)::after
+                background: linear-gradient(235deg, #ff005e, #010615, #fbff00)
+
+            &:nth-child(7)::before,
+            &:nth-child(8)::before,
+            &:nth-child(9)::before,
+            &:nth-child(7)::after,
+            &:nth-child(8)::after,
+            &:nth-child(9)::after
+                background: linear-gradient(235deg, #772aff, #010615, #2196f3)
+
+            .refimgbox
+                position: absolute
+                top: 0
+                left: 0
+                width: 100%
+                height: 100%
+                padding: 10px
+                box-sizing: border-box
+
+                img
+                    width: 100%
+                    height: 350px
+                    opacity: .1
+                    transition: .5s
+
+            .refcontent
+                position: absolute
+                bottom: 0
+                left: 10px
+                right: 10px
+                bottom: 10px
+                height: 90px
+                background: rgba(0, 0, 0, .4)
+                display: flex
+                justify-content: center
+                align-items: center
+                text-align: center
+                opacity: 0
+                transition: .5s
+
+                h2
+                    font-size: 1rem
+                    color: #fff
+                    font-weight: 500
+                    line-height: 1rem
+                    letter-spacing: 1px
+
+                    span
+                        font-size: 14px
+                        color: #fff
+                        font-weight: 200
+                        letter-spacing: 2px
+
+

@@ -1,0 +1,157 @@
+section
+    &#aboutContent
+        .card
+            &-body
+                background: linear-gradient(45deg, red, blue)
+                height: 9rem
+
+                p
+                    text-align: justify
+
+            img
+                height: $cardimageheight
+
+        .cardbodynd
+            display: grid
+            grid-template-columns: repeat(2, 1fr)
+            justify-content: center
+            align-items: center
+            text-align: center
+            gap: .5rem
+
+            div
+                i
+                    display: block
+                    font-weight: 500
+                    font-size: 1.5rem
+
+        .cardbodyrd
+            display: grid
+            grid-template-columns: repeat(4, 1fr)
+            justify-content: center
+            align-items: center
+            text-align: center
+            gap: .5rem
+
+            div
+                i
+                    display: block
+                    font-weight: 500
+                    font-size: 1.5rem
+
+    &#deneme
+        position: relative
+        //Tablet
+        #tmain
+            display: flex
+
+            #tablet
+                width: 1024px
+                height: 600px
+                border-radius: 1.5rem
+                //border-bottom-left-radius: 1.5rem
+                background: black
+                margin: 0 300px 3rem
+                position: relative
+                animation-name: t1
+                animation-duration: 4s
+                animation-timing-function: linear
+                animation-delay: 1s
+                animation-iteration-count: infinite
+                animation-direction: alternate
+                box-shadow: 15px 15px 5px rgba(0, 0, 0, .3)
+
+                &Internal
+                    width: 1004px
+                    height: 580px
+                    background: lime
+                    position: absolute
+                    top: 10px
+                    left: 10px
+                    border-radius: 1.5rem
+                    display: flex
+                    justify-content: space-around
+                    align-items: flex-end
+                    padding-bottom: 40px
+                    
+                    div
+                        color: white
+                        font-size: 1.3rem
+
+                .tablest
+                    background: url('../img/18.jpg')
+                    background-repeat: no-repeat
+                    background-size: cover
+                    background-position: center
+
+                .tablend
+                    background: url('../img/17.jpg')
+                    background-repeat: no-repeat
+                    background-size: cover
+                    background-position: center
+
+        //Telefon
+        #pmain
+            #mobile
+                width: 360px
+                height: 700px
+                background: black
+                border: 5px solid black
+                border-radius: 1rem
+                position: absolute
+                left: 1275px
+                bottom: -75px
+                animation-name: p1
+                animation-duration: 4s
+                animation-timing-function: linear
+                animation-delay: 1s
+                animation-iteration-count: infinite
+                animation-direction: alternate
+                box-shadow: 20px 20px 5px rgba(0, 0, 0, .3)
+
+                &Internal
+                    width: 340px
+                    height: 680px
+                    position: absolute
+                    left: 5px
+                    top: 5px
+                    border: 1px solid black
+                    border-radius: 1rem
+
+                .mobilest
+                    background: url('../img/14.jpg')
+                    background-repeat: no-repeat
+                    background-size: cover
+                    background-position: center
+
+                .mobilend
+                    background: url('../img/15.jpg')
+                    background-repeat: no-repeat
+                    background-size: cover
+                    background-position: center
+                    
+                &Top
+                    width: 200px
+                    height: 20px
+                    background: black
+                    position: absolute
+                    top: 0
+                    left: 70px
+                    border-bottom-left-radius: 2rem
+                    border-bottom-right-radius: 2rem
+
+        margin-bottom: 7rem
+
+@keyframes p1
+    from
+        transform: translateX(0)
+
+    to
+        transform: translateX(-1000px)
+
+@keyframes t1
+    from
+        transform: translateX(0)
+
+    to
+        transform: translateX(300px)

@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Sertaç YILDIRIR, sertaç yıldırır, sertac yildirir">
+    <meta name="keywords" content="HTML, CSS, javascript, java">
+    <meta name="description" content="Web Development, Software Development, Web Design">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet">
@@ -11,9 +14,30 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/style.css" />
-    <title>Document</title>
+    <title>Sertaç YILDIRIR</title>
+    <link rel="icon" href="img/logo.png" />
 </head>
-<body class="gunduz">
+<body>
+  <!-- background -->
+  <div class="wrapper">
+    <div class="box">
+      <div class="wb1"></div>
+      <div class="wb2"></div>
+      <div class="wb3"></div>
+      <div class="wb4"></div>
+      <div class="wb5"></div>
+      <div class="wb6"></div>
+      <div class="wb7"></div>
+      <div class="wb8"></div>
+      <div class="wb9"></div>
+      <div class="wb10"></div>
+    </div>
+  </div>
+  <!-- background end -->
+    <!-- Progress Bar -->
+    <div id="progressBar"></div>
+    <div id="scrollPath"></div>
+    <!-- Progress Bar end -->
     <!-- header -->
     <header>
         <nav class="navbar navbar-expand bg-body-tertiary gunduz">
@@ -36,18 +60,26 @@
                 </ul>
                 <div class="dropdown">
                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        TEMA
+                        Diğer Çalışmalarım
                     </a>
                     <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" id="geceModu" onclick="modGece()" href="#">Gece Modu</a></li>
-                        <li><a class="dropdown-item" id="gündüzModu" onclick="modGunduz()" href="#">Gündüz Modu</a></li>
+                        <li><a class="dropdown-item" href="https://ysertac.github.io/My-Bio/" target="_blank">My Old Bio</a></li>
+                        <li><a class="dropdown-item" href="https://ysertac.github.io/blogcoh/index.html" target="_blank">Blog</a></li>
+                        <li><a class="dropdown-item" href="https://ysertac.github.io/hotelwyes/" target="_blank">Hotel Wyes</a></li>
+                        <li><a class="dropdown-item" href="https://ysertac.github.io/newswyes/" target="_blank">News Wyes</a></li>
+                        <li><a class="dropdown-item" href="https://ysertac.github.io/cohplayer/" target="_blank">Simple MP3</a></li>
+                        <li><a class="dropdown-item" href="https://ysertac.github.io/Simple-Quiz-App/" target="_blank">Simple Quiz App</a></li>
+                        <li><a class="dropdown-item" href="https://ysertac.github.io/countryWiki/" target="_blank">Country Wiki</a></li>
+                        <li><a class="dropdown-item" href="http://nizamyapidenetim.com/" target="_blank">Nizam Yapı Denetim</a></li>
+                        <li><a class="dropdown-item" href="http://yusufaltay.com.tr/" target="_blank">Ressam Yusuf Altay</a></li>
                     </ul>
                 </div>
               </div>
             </div>
         </nav>
     </header>
-    <!-- header end -->
+    <!-- Header end -->
+    <!-- Main -->
     <main>
       <!-- Banner Section -->
       <div id="banner">
@@ -91,7 +123,7 @@
                 <img src="img/8.jpg" loading="lazy" alt="">
               </div>
               <div class="content">
-                <h2>Sertaç YILDIRIR <br /><span>Web Designer</span></h2>
+                <h2>Sertaç YILDIRIR <br /><span>Web Geliştirici</span></h2>
               </div>
             </div>
             <div class="swiper-slide">
@@ -99,7 +131,7 @@
                 <img src="img/7.jpg" loading="lazy" alt="">
               </div>
               <div class="content">
-                <h2>Sertaç YILDIRIR <br /><span>Web Designer</span></h2>
+                <h2>Sertaç YILDIRIR <br /><span>Web Geliştirici</span></h2>
               </div>
             </div>
             <div class="swiper-slide">
@@ -107,7 +139,7 @@
                 <img src="img/6.jpg" loading="lazy" alt="">
               </div>
               <div class="content">
-                <h2>Sertaç YILDIRIR <br /><span>Web Designer</span></h2>
+                <h2>Sertaç YILDIRIR <br /><span>Web Geliştirici</span></h2>
               </div>
             </div>
             <div class="swiper-slide">
@@ -115,7 +147,7 @@
                 <img src="img/5.jpg" loading="lazy" alt="">
               </div>
               <div class="content">
-                <h2>Sertaç YILDIRIR <br /><span>Web Designer</span></h2>
+                <h2>Sertaç YILDIRIR <br /><span>Web Geliştirici</span></h2>
               </div>
             </div>
             <div class="swiper-slide">
@@ -123,7 +155,7 @@
                 <img src="img/4.jpg" loading="lazy" alt="">
               </div>
               <div class="content">
-                <h2>Sertaç YILDIRIR <br /><span>Web Designer</span></h2>
+                <h2>Sertaç YILDIRIR <br /><span>Web Geliştirici</span></h2>
               </div>
             </div>
             <div class="swiper-slide">
@@ -131,7 +163,7 @@
                 <img src="img/3.jpg" loading="lazy" alt="">
               </div>
               <div class="content">
-                <h2>Sertaç YILDIRIR <br /><span>Web Designer</span></h2>
+                <h2>Sertaç YILDIRIR <br /><span>Web Geliştirici</span></h2>
               </div>
             </div>
           </div>
@@ -217,8 +249,6 @@
       <!-- Profile End -->
       <!-- Content -->
       <div id="content" class="gunduz">
-        <h2 class="baslik">Technicals</h2>
-        <div class="bosluk" style="width: 14rem;"></div>
           <div class="my_icons">
             <div class="ficon o1">
               <div>
@@ -248,8 +278,9 @@
       </div>
       <!-- Content End -->
     </main>
+    <!-- Main end -->
     <!-- Footer -->
-    <footer class="gunduz">
+    <footer>
       <div class="container">
         <div id="footer_1">
           <p>Web Sitesi, mobil uygulama ve her türlü danışmanlık hizmeti arayışınızda bana ulaşabilirsiniz.</p>
@@ -282,16 +313,17 @@
     <!-- Footer End -->
 
 
-    
+  
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script src="js/variable.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.3.js"></script>
-    <script src="js/script.js"></script>
     <script src="js/slider.js"></script>
     <script src="js/content.js"></script>
     <script src="http://code.jquery.com/jquery-latest.min.js"></script>
     <script src="https://cdn.jsdelivr.net/jquery.drawsvg/1/jquery.drawsvg.min.js"></script>
     <script src="js/icons.js"></script>
+    <script src="js/pbar.js"></script>
+    <script src="js/bg.js"></script>
 </body>
 </html>
