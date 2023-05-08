@@ -194,22 +194,22 @@ section#deneme {
   section#deneme #tmain {
     display: flex; }
     section#deneme #tmain #tablet {
-      width: 1024px;
-      height: 600px;
+      width: 927px;
+      height: 602px;
       border-radius: 1.5rem;
       background: black;
-      margin: 0 300px 3rem;
+      margin-left: 15rem;
+      margin-bottom: 3rem;
       position: relative;
       animation-name: t1;
       animation-duration: 4s;
       animation-timing-function: linear;
-      animation-delay: 1s;
       animation-iteration-count: infinite;
       animation-direction: alternate;
       box-shadow: 15px 15px 5px rgba(0, 0, 0, 0.3); }
       section#deneme #tmain #tabletInternal {
-        width: 1004px;
-        height: 580px;
+        width: 907px;
+        height: 582px;
         background: lime;
         position: absolute;
         top: 10px;
@@ -233,8 +233,8 @@ section#deneme {
         background-size: cover;
         background-position: center; }
   section#deneme #pmain #mobile {
-    width: 360px;
-    height: 700px;
+    width: 290px;
+    height: 574px;
     background: black;
     border: 5px solid black;
     border-radius: 1rem;
@@ -244,13 +244,12 @@ section#deneme {
     animation-name: p1;
     animation-duration: 4s;
     animation-timing-function: linear;
-    animation-delay: 1s;
     animation-iteration-count: infinite;
     animation-direction: alternate;
     box-shadow: 20px 20px 5px rgba(0, 0, 0, 0.3); }
     section#deneme #pmain #mobileInternal {
-      width: 340px;
-      height: 680px;
+      width: 270px;
+      height: 554px;
       position: absolute;
       left: 5px;
       top: 5px;
@@ -267,8 +266,8 @@ section#deneme {
       background-size: cover;
       background-position: center; }
     section#deneme #pmain #mobileTop {
-      width: 200px;
-      height: 20px;
+      width: 130px;
+      height: 15px;
       background: black;
       position: absolute;
       top: 0;
@@ -654,40 +653,20 @@ section#refst {
     align-items: center; }
     #content .my_icons div {
       font-size: 2.5rem; }
-      #content .my_icons div.ficon {
+      #content .my_icons div.ficon, #content .my_icons div.thicon {
         background: linear-gradient(45deg, aqua, blue);
         width: 25%; }
-        #content .my_icons div.ficon div {
+        #content .my_icons div.ficon div, #content .my_icons div.thicon div {
           margin-top: 4rem;
           margin-bottom: 4rem;
           display: flex;
           flex-direction: column;
           justify-content: center;
           align-items: center; }
-      #content .my_icons div.sicon {
+      #content .my_icons div.sicon, #content .my_icons div.licon {
         background: linear-gradient(45deg, lime, greenyellow);
         width: 25%; }
-        #content .my_icons div.sicon div {
-          margin-top: 4rem;
-          margin-bottom: 4rem;
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center; }
-      #content .my_icons div.thicon {
-        background: linear-gradient(45deg, aqua, blue);
-        width: 25%; }
-        #content .my_icons div.thicon div {
-          margin-top: 4rem;
-          margin-bottom: 4rem;
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center; }
-      #content .my_icons div.licon {
-        background: linear-gradient(45deg, lime, greenyellow);
-        width: 25%; }
-        #content .my_icons div.licon div {
+        #content .my_icons div.sicon div, #content .my_icons div.licon div {
           margin-top: 4rem;
           margin-bottom: 4rem;
           display: flex;
@@ -715,3 +694,86 @@ section#refst {
         transition: 2s; }
         #profile #iconpart .first .second:hover {
           rotate: 45deg; }
+
+@media (max-width: 1025px) {
+  html {
+    font-size: 15px; }
+  .container {
+    max-width: 720px; }
+  header nav img {
+    width: 50px; }
+  main #banner {
+    height: 73vh; }
+    main #banner #carouselExample {
+      height: 70vh; }
+      main #banner #carouselExample .carousel-inner .carousel-item img {
+        height: 70vh; }
+  main .swiper {
+    height: 58vh; }
+    main .swiper .swiper-slide .imgBox {
+      height: 50vh; }
+  #scrollPath,
+  #progressBar {
+    width: 7px; }
+  #profile #iconpart div .first .second svg {
+    margin: 0; }
+  #content .my_icons div.ficon div, #content .my_icons div.sicon div, #content .my_icons div.thicon div, #content .my_icons div.licon div {
+    margin-top: 3rem;
+    margin-bottom: 3rem; }
+  section#aboutContent .card-body {
+    font-size: .9rem; }
+  section#aboutContent .card-title {
+    font-size: 1.1rem; }
+  section#aboutContent .card img {
+    height: 221.59985px; }
+  section#deneme #tmain #tablet {
+    width: 735.6px;
+    height: 475.6px;
+    border-radius: 1rem; }
+    section#deneme #tmain #tabletInternal {
+      width: 725.6px;
+      height: 465.6px;
+      top: 5px;
+      left: 5px;
+      border-radius: 1rem; }
+  section#deneme #pmain #mobile {
+    height: 455.2px;
+    width: 228px;
+    border-width: 3px; }
+    section#deneme #pmain #mobileInternal {
+      height: 443.2px;
+      width: 216px;
+      top: 3px;
+      left: 3px; }
+    section#deneme #pmain #mobileTop {
+      width: 76px;
+      height: 13px; }
+  section#refst .refbox {
+    width: 200px;
+    height: 200px; }
+    section#refst .refbox:hover {
+      height: 250px; }
+    section#refst .refbox .refimgbox img {
+      height: 175px; }
+    section#refst .refbox .refcontent {
+      height: 45px; }
+  section#mycontact {
+    height: 93vh; }
+    section#mycontact .form_box {
+      width: 75%; }
+  section#contact_info div.cmain {
+    font-size: 1.2rem; }
+    section#contact_info div.cmain .container {
+      max-width: 850px; } }
+
+@keyframes p1 {
+  from {
+    transform: translateX(-550px); }
+  to {
+    transform: translateX(-1200px); } }
+
+@keyframes t1 {
+  from {
+    transform: translateX(-150px); }
+  to {
+    transform: translateX(-25px); } }

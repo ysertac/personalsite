@@ -1,0 +1,155 @@
+@media (max-width: 1025px)
+    html
+        font-size: 15px
+    
+    .container
+        max-width: 720px
+
+    //carousel / swiper
+    header
+        nav
+            img
+                width: 50px
+
+    main
+        #banner
+            height: 73vh
+
+            #carouselExample
+                height: 70vh
+
+                .carousel-inner
+                    .carousel-item
+                        img
+                            height: 70vh
+            
+        .swiper
+            height: 58vh
+
+            .swiper-slide
+                .imgBox
+                    height: 50vh
+
+    //carousel / swiper end
+    //Scrollbar
+    #scrollPath,
+    #progressBar
+        width: 7px
+    //Scrollbar end
+    //iconpart
+    #profile
+        #iconpart
+            div
+                .first
+                    .second
+                        svg
+                            margin: 0
+    
+    //iconpart end
+    //content
+    #content
+        .my_icons
+            div
+                &.ficon,
+                &.sicon,
+                &.thicon,
+                &.licon
+                    div
+                        margin-top: 3rem
+                        margin-bottom: 3rem
+    //content end
+    //about
+    section
+        &#aboutContent
+            .card
+                &-body
+                    font-size: .9rem
+
+                &-title
+                    font-size: 1.1rem
+
+                img
+                    height: .6 * $cardimageheight
+
+        &#deneme
+            #tmain
+                #tablet
+                    width: ($tabletwidth * .8) + 10px
+                    height: ($tabletheight * .8) + 10px
+                    border-radius: 1rem
+
+                    &Internal
+                        width: ($tabletwidth * .8)
+                        height: ($tabletheight * .8)
+                        top: 5px
+                        left: 5px
+                        border-radius: 1rem
+
+            #pmain
+                #mobile
+                    height: (.8 * $mobileheight) + 12px
+                    width: (.8 * $mobilewidth) + 12px
+                    border-width: 3px
+
+                    &Internal
+                        height: .8 * $mobileheight
+                        width: .8 * $mobilewidth
+                        top: 3px
+                        left: 3px
+
+                    &Top
+                        width: 76px
+                        height: 13px
+
+    //about end
+    //ref
+    section
+        &#refst
+            .refbox
+                width: 200px
+                height: 200px
+
+                &:hover
+                    height: 250px
+
+                .refimgbox
+                    img
+                        height: 175px
+
+                .refcontent
+                    height: 45px
+
+                
+    //ref end
+    //contact
+    section
+        &#mycontact
+            height: 93vh
+
+            .form_box
+                width: 75%
+
+        &#contact_info
+            div.cmain
+                font-size: 1.2rem
+
+                .container
+                    max-width: 850px
+
+    //contact end
+
+@keyframes p1
+    from
+        transform: translateX(-550px)
+
+    to
+        transform: translateX(-1200px)
+
+@keyframes t1
+    from
+        transform: translateX(-150px)
+
+    to
+        transform: translateX(-25px)
+
+    

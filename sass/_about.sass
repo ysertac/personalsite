@@ -46,24 +46,24 @@ section
             display: flex
 
             #tablet
-                width: 1024px
-                height: 600px
+                width: $tabletwidth + 20px
+                height: $tabletheight + 20px
                 border-radius: 1.5rem
                 //border-bottom-left-radius: 1.5rem
                 background: black
-                margin: 0 300px 3rem
+                margin-left: 15rem
+                margin-bottom: 3rem
                 position: relative
                 animation-name: t1
                 animation-duration: 4s
                 animation-timing-function: linear
-                animation-delay: 1s
                 animation-iteration-count: infinite
                 animation-direction: alternate
                 box-shadow: 15px 15px 5px rgba(0, 0, 0, .3)
 
                 &Internal
-                    width: 1004px
-                    height: 580px
+                    width: $tabletwidth
+                    height: $tabletheight
                     background: lime
                     position: absolute
                     top: 10px
@@ -93,8 +93,8 @@ section
         //Telefon
         #pmain
             #mobile
-                width: 360px
-                height: 700px
+                width: $mobilewidth + 20px
+                height: $mobileheight + 20px
                 background: black
                 border: 5px solid black
                 border-radius: 1rem
@@ -104,14 +104,13 @@ section
                 animation-name: p1
                 animation-duration: 4s
                 animation-timing-function: linear
-                animation-delay: 1s
                 animation-iteration-count: infinite
                 animation-direction: alternate
                 box-shadow: 20px 20px 5px rgba(0, 0, 0, .3)
 
                 &Internal
-                    width: 340px
-                    height: 680px
+                    width: $mobilewidth
+                    height: $mobileheight
                     position: absolute
                     left: 5px
                     top: 5px
@@ -131,8 +130,8 @@ section
                     background-position: center
                     
                 &Top
-                    width: 200px
-                    height: 20px
+                    width: 130px
+                    height: 15px
                     background: black
                     position: absolute
                     top: 0
