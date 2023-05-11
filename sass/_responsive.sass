@@ -74,7 +74,8 @@
         &#deneme
             #tmain
                 #tablet
-                    width: ($tabletwidth * .8) + 10px
+                    min-width: ($tabletwidth * .8) + 10px
+                    max-width: ($tabletwidth * .8) + 10px
                     height: ($tabletheight * .8) + 10px
                     border-radius: 1rem
 
@@ -137,19 +138,482 @@
                     max-width: 850px
 
     //contact end
+    //-----
+    header,
+    footer
+        .container
+            max-width: 900px
+    //-----
 
-@keyframes p1
-    from
-        transform: translateX(-550px)
+    @keyframes p1
+        from
+            transform: translateX(-550px)
 
-    to
-        transform: translateX(-1200px)
+        to
+            transform: translateX(-1200px)
 
-@keyframes t1
-    from
-        transform: translateX(-150px)
+    @keyframes t1
+        from
+            transform: translateX(-150px)
 
-    to
-        transform: translateX(-25px)
+        to
+            transform: translateX(-25px)
+
+//-------------------------------
+
+@media (max-width: 770px)
+    html
+        font-size: 13px
+    
+    .container
+        max-width: 700px
+
+    //carousel / swiper
+    header
+        nav
+            img
+                width: 50px
+
+    main
+        #banner
+            height: 60vh
+
+            #carouselExample
+                height: 55vh
+
+                .carousel-inner
+                    .carousel-item
+                        img
+                            height: 55vh
+            
+        .swiper
+            height: 50vh
+
+            .swiper-slide
+                .imgBox
+                    height: 42vh
+
+    //carousel / swiper end
+    //Scrollbar
+    #scrollPath,
+    #progressBar
+        width: 5px
+    //Scrollbar end
+    //iconpart
+    #profile
+        #iconpart
+            grid-template-columns: repeat(2, 1fr)
+            div
+                .first
+                    .second
+                        width: 12rem
+                        height: 12rem
+                        svg
+                            margin: 0
+    
+    //iconpart end
+    //content
+    #content
+        .my_icons
+            flex-wrap: wrap
+            div
+                &.ficon,
+                &.sicon,
+                &.thicon,
+                &.licon
+                    width: 50%
+                    div
+                        margin-top: 4rem
+                        margin-bottom: 4rem
+                &.thicon
+                    order: 4
+    //content end
+    //about
+    section
+        &#aboutContent
+            .card
+                &-body
+                    font-size: .9rem
+
+                &-title
+                    font-size: 1.1rem
+
+                img
+                    height: .6 * $cardimageheight
+
+        &#deneme
+            #tmain
+                #tablet
+                    min-width: ($tabletwidth * .6) + 10px
+                    max-width: ($tabletwidth * .6) + 10px
+                    height: ($tabletheight * .6) + 10px
+                    border-radius: 1rem
+
+                    &Internal
+                        width: $tabletwidth * .6
+                        height: $tabletheight * .6
+                        top: 5px
+                        left: 5px
+                        border-radius: 1rem
+
+            #pmain
+                #mobile
+                    height: (.6 * $mobileheight) + 12px
+                    width: (.6 * $mobilewidth) + 12px
+                    border-width: 3px
+
+                    &Internal
+                        height: .6 * $mobileheight
+                        width: .6 * $mobilewidth
+                        top: 3px
+                        left: 3px
+
+                    &Top
+                        width: 60px
+                        height: 10px
+                        left: 55px
+
+    //about end
+    //ref
+    section
+        &#refst
+            grid-template-columns: repeat(2, 1fr)
+            justify-items: center
+            align-items: center
+
+            .refbox
+                width: 300px
+                height: 300px
+
+                &:hover
+                    height: 375px
+
+                .refimgbox
+                    img
+                        height: 262.5px
+
+                .refcontent
+                    height: 67.5px
+
+                
+    //ref end
+    //contact
+    section
+        &#mycontact
+            height: 93vh
+
+            .form_box
+                width: 80%
+
+        &#contact_info
+            div.cmain
+                font-size: 1.8rem
+
+                .container
+                    max-width: 650px
+                    flex-wrap: wrap
+
+                    #adress
+                        width: 100%
+                        order: 1
+                        padding: 3rem 0
+                    
+                    #mobile
+                        order: 2
+                        padding: 3rem 2rem
+
+                    #email
+                        order: 3
+                        padding: 3rem 2rem
+
+                    div
+                        i
+                            font-size: 1.8rem
+
+
+    //contact end
+    //-----
+    header
+        .container
+            max-width: 680px
+    footer
+        .container
+            max-width: 720px
+    //-----
+
+    @keyframes p1
+        from
+            transform: translateX(-750px)
+
+        to
+            transform: translateX(-1200px)
+
+    @keyframes t1
+        from
+            transform: translateX(-150px)
+
+        to
+            transform: translateX(-25px)
+
+//-------------------------------------------
+
+@media (max-width: 500px)
+    html
+        font-size: 14px
+    
+    .container
+        max-width: 700px
+
+    //carousel / swiper
+    header
+        nav
+            img
+                width: 40px
+
+    main
+        #banner
+            margin-bottom: 1.5rem
+            height: 35vh
+
+            #carouselExample
+                height: 35vh
+
+                .carousel-inner
+                    .carousel-item
+                        img
+                            height: 35vh
+            
+        .swiper
+            height: 31vh
+
+            .swiper-slide
+                .imgBox
+                    height: 25vh
+
+                .content
+                    height: 60px
+                    
+                    h2
+                        font-size: 1.3rem
+                        
+                    span
+                        font-size: 1rem
+            
+    
+
+    //carousel / swiper end
+    //Scrollbar
+    #scrollPath,
+    #progressBar
+        width: 5px
+    //Scrollbar end
+    //iconpart
+    #profile
+        .baslik
+            font-size: 2rem
+        .bosluk
+            width: 12rem!important
+
+        .yazi
+            .yazialt
+                font-size: 1.1rem
+
+        #iconpart
+            grid-template-columns: repeat(2, 1fr)
+            div
+                .first
+                    .second
+                        width: 10rem
+                        height: 10rem
+                        svg
+                            margin: 0
+    
+    //iconpart end
+    //content
+    #content
+        .my_icons
+            flex-direction: column
+            div
+                &.ficon,
+                &.sicon,
+                &.thicon,
+                &.licon
+                    width: 100%
+                    div
+                        margin-top: 4rem
+                        margin-bottom: 4rem
+                &.licon
+                    order: 4
+                     
+    //content end
+    //about
+    section
+        &#aboutContent
+            .baslik
+                font-size: 2rem
+            
+            .bosluk
+                width: 6.6rem!important
+            .card
+                width: 96%
+                margin-left: 2%
+                &-body
+                    font-size: 1rem
+
+                &-title
+                    font-size: 1.2rem
+
+                img
+                    height: .7 * $cardimageheight
+
+            .cardrd
+                .card-body
+                    font-size: .65rem !important
+                img
+                    height: .4 * $cardimageheight !important
+
+        &#deneme
+            margin-bottom: 8rem
+            #tmain
+                #tablet
+                    min-width: ($tabletwidth * .45) + 10px
+                    max-width: ($tabletwidth * .45) + 10px
+                    height: ($tabletheight * .45) + 10px
+                    border-radius: .7rem
+                    margin-left: 2.7rem
+                    box-shadow: 10px 10px 5px rgba(0, 0, 0, .3)
+
+                    &Internal
+                        width: $tabletwidth * .45
+                        height: $tabletheight * .45
+                        top: 5px
+                        left: 5px
+                        border-radius: .7rem
+
+            #pmain
+                #mobile
+                    height: (.45 * $mobileheight) + 8px
+                    width: (.45 * $mobilewidth) + 8px
+                    border-width: 3px
+                    border-radius: .6rem
+                    left: 250px
+                    box-shadow: 10px 10px 5px rgba(0, 0, 0, .3)
+
+                    &Internal
+                        height: .45 * $mobileheight
+                        width: .45 * $mobilewidth
+                        top: 1px
+                        left: 1px
+                        border-radius: .6rem
+
+                    &Top
+                        width: 40px
+                        height: 8px
+                        left: 46px
+
+    //about end
+    //ref
+    section
+        &#refst
+            grid-template-columns: repeat(1, 1fr)
+            .refbox
+                width: 300px
+                height: 300px
+
+                &:hover
+                    height: 375px
+
+                .refimgbox
+                    img
+                        height: 262.5px
+
+                .refcontent
+                    height: 67.5px
+
+                
+    //ref end
+    //contact
+    section
+        &#mycontact
+            height: 93vh
+
+            .form_box
+                width: 80%
+
+                .form_value
+                    form
+                        grid-template-columns: repeat(1, 1fr)
+                        justify-items: center
+
+                        .inputbox
+                            margin: 1.5rem 0
+                        h2
+                            grid-column: 1 / span 1
+
+                        .textarea
+                            grid-column: 1 / span 1
+                            margin: 1.5rem 0
+
+                        .buttonarea
+                            grid-column: 1 / span 1
+
+        &#contact_info
+            div.cmain
+                font-size: 1.6rem
+
+                .container
+                    max-width: 450px
+                    flex-direction: column
+                    padding: 8rem 0
+
+                    #adress
+                        //width: 100%
+                        padding: 3rem 0
+                    
+                    #mobile
+                        padding: 3rem 2rem
+
+                    #email
+                        padding: 3rem 2rem
+                        font-size: 1.8rem
+
+                    div
+                        i
+                            font-size: 1.8rem
+
+
+    //contact end
+    //-----
+    header
+        .container
+            max-width: 450px
+    footer
+        font-size: 1.2rem
+        
+        .container
+            max-width: 475px
+            grid-template-columns: 100%
+
+            #footer_3
+                #mysocial
+                    justify-content: space-around
+            
+            #footer_4
+                grid-column: 1 / span 1
+    //-----
+
+    @keyframes p1
+        from
+            transform: translateY(0)
+
+        to
+            transform: translateY(-150px)
+
+    @keyframes t1
+        from
+            transform: translateY(0)
+
+        to
+            transform: translateY(100px)
 
     
