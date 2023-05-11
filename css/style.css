@@ -900,7 +900,7 @@ section#refst {
     to {
       transform: translateX(-25px); } } }
 
-@media (max-width: 500px) {
+@media (max-width: 576px) {
   html {
     font-size: 14px; }
   .container {
@@ -973,7 +973,7 @@ section#refst {
       max-width: 418.15px;
       height: 271.9px;
       border-radius: .7rem;
-      margin-left: 2.7rem;
+      margin-left: 5.1rem;
       box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.3); }
       section#deneme #tmain #tabletInternal {
         width: 408.15px;
