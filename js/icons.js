@@ -59,6 +59,25 @@ function animate6() {
     $svg6.drawsvg('animate');
     }
 
+let $svg7 = $('#svg7').drawsvg({
+    duration: 4500,
+    easing: 'linear',
+    reverse: false
+});
+    
+function animate7() {
+    $svg7.drawsvg('animate');
+    }
+
+let $svg8 = $('#svg8').drawsvg({
+    duration: 4500,
+    easing: 'linear',
+    reverse: false
+});
+        
+function animate8() {
+    $svg8.drawsvg('animate');
+    }
 
 
 animate1();
@@ -67,6 +86,8 @@ animate3();
 animate4();
 animate5();
 animate6();
+animate7();
+animate8();
 
 setInterval(function() {
     animate1();
@@ -75,4 +96,6 @@ setInterval(function() {
     animate4();
     animate5();
     animate6();
+    animate7();
+    animate8();
 }, 5000);

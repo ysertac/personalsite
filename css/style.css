@@ -64,6 +64,9 @@ svg {
   margin: auto;
   width: 5rem; }
 
+h2.baslik {
+  font-size: 1.7rem; }
+
 #scrollPath {
   position: fixed;
   top: 0;
@@ -157,12 +160,22 @@ svg {
 
 section#aboutContent .card-body {
   background: linear-gradient(45deg, red, blue);
-  height: 9rem; }
+  height: 9rem;
+  border-bottom-left-radius: .3rem;
+  border-bottom-right-radius: .3rem; }
   section#aboutContent .card-body p {
-    text-align: justify; }
+    text-align: justify;
+    font-size: .9rem; }
 
 section#aboutContent .card img {
-  height: 369.33308px; }
+  height: 307.72px; }
+
+section#aboutContent .cardst {
+  width: 25rem;
+  margin-left: 6rem; }
+
+section#aboutContent .cardnd {
+  width: 25rem; }
 
 section#aboutContent .cardbodynd {
   display: grid;
@@ -198,7 +211,7 @@ section#deneme {
       height: 602px;
       border-radius: 1.5rem;
       background: black;
-      margin-left: 15rem;
+      margin-left: 5rem;
       margin-bottom: 3rem;
       position: relative;
       animation-name: t1;
@@ -239,7 +252,7 @@ section#deneme {
     border: 5px solid black;
     border-radius: 1rem;
     position: absolute;
-    left: 1275px;
+    left: 1000px;
     bottom: -75px;
     animation-name: p1;
     animation-duration: 4s;
@@ -279,7 +292,7 @@ section#deneme {
   from {
     transform: translateX(0); }
   to {
-    transform: translateX(-1000px); } }
+    transform: translateX(-800px); } }
 
 @keyframes t1 {
   from {
@@ -294,12 +307,12 @@ section#mycontact {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 91vh;
+  height: 92.3vh;
   width: 100%; }
   section#mycontact .form_box {
     position: relative;
-    width: 50%;
-    height: 80%;
+    width: 900px;
+    height: 90%;
     background: transparent;
     border: 2px solid white;
     border-radius: 1rem;
@@ -310,8 +323,7 @@ section#mycontact {
     color: white; }
     section#mycontact .form_box .form_value form {
       display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      justify-content: center; }
+      grid-template-columns: repeat(2, 1fr); }
       section#mycontact .form_box .form_value form h2 {
         font-size: 1.5rem;
         text-align: center;
@@ -366,7 +378,7 @@ section#contact_info {
     background-size: cover;
     background-attachment: fixed;
     position: relative;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     z-index: -1; }
     section#contact_info div.cmain::before {
       content: " ";
@@ -379,7 +391,7 @@ section#contact_info {
       z-index: -1; }
     section#contact_info div.cmain .container {
       display: flex;
-      justify-content: space-between;
+      justify-content: space-around;
       align-items: center;
       color: greenyellow;
       font-weight: 750;
@@ -390,12 +402,13 @@ section#contact_info {
         justify-content: center;
         align-items: center; }
         section#contact_info div.cmain .container div i {
-          font-size: 1.7rem; }
+          font-size: 1.2rem; }
 
 footer {
   background: linear-gradient(135deg, cyan, whitesmoke, grey);
   color: black;
-  font-weight: 600; }
+  font-weight: 600;
+  font-size: .85rem; }
   footer .container {
     display: grid;
     grid-template-columns: repeat(3, 1fr); }
@@ -411,7 +424,7 @@ footer {
       display: flex;
       justify-content: space-between; }
       footer #footer_3 div a i {
-        font-size: 2.3rem;
+        font-size: 1.9rem;
         color: black;
         transition: 1s; }
         footer #footer_3 div a i:hover {
@@ -424,7 +437,7 @@ footer {
   position: relative;
   color: #1670f0;
   padding: 0.3rem .7rem;
-  font-size: 1.5rem;
+  font-size: 1rem;
   letter-spacing: .1rem;
   text-decoration: none;
   background: linear-gradient(to right, aqua, antiquewhite);
@@ -504,25 +517,31 @@ footer {
   100% {
     transform: translateY(-100%); } }
 
-.nav-item {
-  padding-right: 10px;
-  z-index: 20; }
-  .nav-item a.active {
-    border-bottom: 2px solid black;
-    z-index: 25; }
-  .nav-item a:hover {
-    border-bottom: 2px solid brown;
-    z-index: 25; }
+nav {
+  padding: 0 !important; }
+  nav .nav-item {
+    padding-right: 10px;
+    z-index: 20;
+    font-size: .8rem; }
+    nav .nav-item a.active {
+      border-bottom: 2px solid black;
+      z-index: 25; }
+    nav .nav-item a:hover {
+      border-bottom: 2px solid brown;
+      z-index: 25; }
+  nav .dropdown {
+    font-size: .8rem; }
 
 section#refst {
   display: grid;
   justify-content: center;
   align-content: center;
-  grid-template-columns: repeat(3, 1fr); }
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center; }
   section#refst .refbox {
     position: relative;
-    width: 400px;
-    height: 400px;
+    width: 250px;
+    height: 250px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -530,7 +549,7 @@ section#refst {
     background: #060c21;
     transition: .5s; }
     section#refst .refbox:hover {
-      height: 500px; }
+      height: 312.5px; }
       section#refst .refbox:hover .refimgbox img {
         opacity: 1; }
       section#refst .refbox:hover .refcontent {
@@ -570,7 +589,7 @@ section#refst {
       box-sizing: border-box; }
       section#refst .refbox .refimgbox img {
         width: 100%;
-        height: 350px;
+        height: 220.5px;
         opacity: .1;
         transition: .5s; }
     section#refst .refbox .refcontent {
@@ -579,7 +598,7 @@ section#refst {
       left: 10px;
       right: 10px;
       bottom: 10px;
-      height: 90px;
+      height: 56.25px;
       background: rgba(0, 0, 0, 0.4);
       display: flex;
       justify-content: center;
@@ -606,7 +625,7 @@ section#refst {
     height: 100vh;
     position: relative; }
     #banner #carouselExample img {
-      height: 91vh;
+      height: 92vh;
       filter: blur(10px); }
 
 .swiper {
@@ -657,13 +676,15 @@ section#refst {
     display: flex;
     align-items: center; }
     #content .my_icons div {
-      font-size: 2.5rem; }
+      font-size: 1.4rem; }
+      #content .my_icons div h2 {
+        font-size: 1.4rem; }
       #content .my_icons div.ficon, #content .my_icons div.thicon {
         background: linear-gradient(45deg, aqua, blue);
         width: 25%; }
         #content .my_icons div.ficon div, #content .my_icons div.thicon div {
-          margin-top: 4rem;
-          margin-bottom: 4rem;
+          margin-top: 2.8rem;
+          margin-bottom: 2.8rem;
           display: flex;
           flex-direction: column;
           justify-content: center;
@@ -672,8 +693,8 @@ section#refst {
         background: linear-gradient(45deg, lime, greenyellow);
         width: 25%; }
         #content .my_icons div.sicon div, #content .my_icons div.licon div {
-          margin-top: 4rem;
-          margin-bottom: 4rem;
+          margin-top: 2.8rem;
+          margin-bottom: 2.8rem;
           display: flex;
           flex-direction: column;
           justify-content: center;
@@ -681,9 +702,11 @@ section#refst {
 
 #profile {
   padding-bottom: 2rem; }
+  #profile .yazi p {
+    font-size: .9rem; }
   #profile #iconpart {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     align-items: center;
     justify-items: center; }
     #profile #iconpart .first {
@@ -691,20 +714,23 @@ section#refst {
       margin: 3rem; }
       #profile #iconpart .first .second {
         background: linear-gradient(45deg, lime, greenyellow);
-        width: 10rem;
-        height: 10rem;
+        width: 8rem;
+        height: 8rem;
         display: flex;
         justify-content: center;
         align-items: center;
         transition: 2s; }
         #profile #iconpart .first .second:hover {
           rotate: 45deg; }
+        #profile #iconpart .first .second svg {
+          width: 4rem;
+          margin: 0; }
 
 @media (max-width: 1025px) {
   html {
     font-size: 15px; }
   .container {
-    max-width: 720px; }
+    max-width: 850px; }
   header nav img {
     width: 50px; }
   main #banner {
@@ -720,17 +746,25 @@ section#refst {
   #scrollPath,
   #progressBar {
     width: 7px; }
-  #profile #iconpart div .first .second svg {
-    margin: 0; }
+  #profile #iconpart div .first .second {
+    width: 8rem; }
+    #profile #iconpart div .first .second svg {
+      margin: 0; }
+  #profile .yazi p {
+    font-size: 1rem; }
   #content .my_icons div.ficon div, #content .my_icons div.sicon div, #content .my_icons div.thicon div, #content .my_icons div.licon div {
     margin-top: 3rem;
     margin-bottom: 3rem; }
   section#aboutContent .card-body {
-    font-size: .9rem; }
+    font-size: 1.2rem; }
   section#aboutContent .card-title {
-    font-size: 1.1rem; }
+    font-size: 1.2rem; }
   section#aboutContent .card img {
-    height: 221.59985px; }
+    height: 184.632px; }
+  section#aboutContent .cardst {
+    margin-left: 1.2rem; }
+  section#aboutContent .cardbodyrd div {
+    font-size: 1rem; }
   section#deneme #tmain #tablet {
     min-width: 735.6px;
     max-width: 735.6px;
@@ -771,17 +805,20 @@ section#refst {
     font-size: 1.2rem; }
     section#contact_info div.cmain .container {
       max-width: 850px; }
-  header .container,
-  footer .container {
-    max-width: 900px; }
+  header,
+  footer {
+    font-size: 1rem; }
+    header .container,
+    footer .container {
+      max-width: 900px; }
   @keyframes p1 {
     from {
-      transform: translateX(-550px); }
+      transform: translateX(-900px); }
     to {
-      transform: translateX(-1200px); } }
+      transform: translateX(-300px); } }
   @keyframes t1 {
     from {
-      transform: translateX(-150px); }
+      transform: translateX(150px); }
     to {
       transform: translateX(-25px); } } }
 
@@ -826,7 +863,9 @@ section#refst {
   section#aboutContent .card-title {
     font-size: 1.1rem; }
   section#aboutContent .card img {
-    height: 221.59985px; }
+    height: 184.632px; }
+  section#aboutContent .cardst {
+    margin-left: 0; }
   section#deneme #tmain #tablet {
     min-width: 554.2px;
     max-width: 554.2px;
@@ -867,6 +906,7 @@ section#refst {
   section#mycontact {
     height: 93vh; }
     section#mycontact .form_box {
+      height: 70%;
       width: 80%; }
   section#contact_info div.cmain {
     font-size: 1.8rem; }
@@ -876,7 +916,7 @@ section#refst {
       section#contact_info div.cmain .container #adress {
         width: 100%;
         order: 1;
-        padding: 3rem 0; }
+        padding: 2rem 0 3rem; }
       section#contact_info div.cmain .container #mobile {
         order: 2;
         padding: 3rem 2rem; }
@@ -885,20 +925,27 @@ section#refst {
         padding: 3rem 2rem; }
       section#contact_info div.cmain .container div i {
         font-size: 1.8rem; }
-  header .container {
-    max-width: 680px; }
+  header {
+    font-size: 1rem; }
+    header nav .nav-item {
+      font-size: 1rem; }
+    header nav .dropdown {
+      font-size: 1rem;
+      padding-bottom: 1.5rem; }
+    header .container {
+      max-width: 680px; }
   footer .container {
     max-width: 720px; }
   @keyframes p1 {
     from {
-      transform: translateX(-750px); }
+      transform: translateX(-500px); }
     to {
-      transform: translateX(-1200px); } }
+      transform: translateX(-900px); } }
   @keyframes t1 {
     from {
-      transform: translateX(-150px); }
+      transform: translateX(0px); }
     to {
-      transform: translateX(-25px); } } }
+      transform: translateX(100px); } } }
 
 @media (max-width: 576px) {
   html {
@@ -906,7 +953,7 @@ section#refst {
   .container {
     max-width: 700px; }
   header nav img {
-    width: 40px; }
+    width: 50px; }
   main #banner {
     margin-bottom: 1.5rem;
     height: 35vh; }
@@ -961,11 +1008,11 @@ section#refst {
     section#aboutContent .card-title {
       font-size: 1.2rem; }
     section#aboutContent .card img {
-      height: 258.53316px; }
+      height: 215.404px; }
   section#aboutContent .cardrd .card-body {
     font-size: .65rem !important; }
   section#aboutContent .cardrd img {
-    height: 147.73323px !important; }
+    height: 123.088px !important; }
   section#deneme {
     margin-bottom: 8rem; }
     section#deneme #tmain #tablet {

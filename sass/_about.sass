@@ -4,12 +4,21 @@ section
             &-body
                 background: linear-gradient(45deg, red, blue)
                 height: 9rem
+                border-bottom-left-radius: .3rem
+                border-bottom-right-radius: .3rem
 
                 p
                     text-align: justify
+                    font-size: .9rem
 
             img
                 height: $cardimageheight
+        .cardst
+            width: 25rem
+            margin-left: 6rem
+
+        .cardnd
+            width: 25rem
 
         .cardbodynd
             display: grid
@@ -51,7 +60,7 @@ section
                 border-radius: 1.5rem
                 //border-bottom-left-radius: 1.5rem
                 background: black
-                margin-left: 15rem
+                margin-left: 5rem
                 margin-bottom: 3rem
                 position: relative
                 animation-name: t1
@@ -99,7 +108,7 @@ section
                 border: 5px solid black
                 border-radius: 1rem
                 position: absolute
-                left: 1275px
+                left: 1000px
                 bottom: -75px
                 animation-name: p1
                 animation-duration: 4s
@@ -146,7 +155,7 @@ section
         transform: translateX(0)
 
     to
-        transform: translateX(-1000px)
+        transform: translateX(-800px)
 
 @keyframes t1
     from

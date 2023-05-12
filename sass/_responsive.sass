@@ -3,7 +3,7 @@
         font-size: 15px
     
     .container
-        max-width: 720px
+        max-width: 850px
 
     //carousel / swiper
     header
@@ -42,8 +42,14 @@
             div
                 .first
                     .second
+                        width: 8rem
+
                         svg
                             margin: 0
+
+        .yazi
+            p
+                font-size: 1rem
     
     //iconpart end
     //content
@@ -63,13 +69,20 @@
         &#aboutContent
             .card
                 &-body
-                    font-size: .9rem
+                    font-size: 1.2rem
 
                 &-title
-                    font-size: 1.1rem
+                    font-size: 1.2rem
 
                 img
                     height: .6 * $cardimageheight
+
+            .cardst
+                margin-left: 1.2rem
+
+            .cardbodyrd
+                div
+                    font-size: 1rem
 
         &#deneme
             #tmain
@@ -141,20 +154,22 @@
     //-----
     header,
     footer
+        font-size: 1rem
+
         .container
             max-width: 900px
     //-----
 
     @keyframes p1
         from
-            transform: translateX(-550px)
+            transform: translateX(-900px)
 
         to
-            transform: translateX(-1200px)
+            transform: translateX(-300px)
 
     @keyframes t1
         from
-            transform: translateX(-150px)
+            transform: translateX(150px)
 
         to
             transform: translateX(-25px)
@@ -240,6 +255,9 @@
 
                 img
                     height: .6 * $cardimageheight
+                
+            .cardst
+                margin-left: 0
 
         &#deneme
             #tmain
@@ -303,6 +321,7 @@
             height: 93vh
 
             .form_box
+                height: 70%
                 width: 80%
 
         &#contact_info
@@ -316,7 +335,7 @@
                     #adress
                         width: 100%
                         order: 1
-                        padding: 3rem 0
+                        padding: 2rem 0 3rem
                     
                     #mobile
                         order: 2
@@ -334,6 +353,17 @@
     //contact end
     //-----
     header
+        font-size: 1rem
+
+        nav
+
+            .nav-item
+                font-size: 1rem
+
+            .dropdown
+                font-size: 1rem
+                padding-bottom: 1.5rem
+
         .container
             max-width: 680px
     footer
@@ -343,17 +373,17 @@
 
     @keyframes p1
         from
-            transform: translateX(-750px)
+            transform: translateX(-500px)
 
         to
-            transform: translateX(-1200px)
+            transform: translateX(-900px)
 
     @keyframes t1
         from
-            transform: translateX(-150px)
+            transform: translateX(0px)
 
         to
-            transform: translateX(-25px)
+            transform: translateX(100px)
 
 //-------------------------------------------
 
@@ -368,7 +398,7 @@
     header
         nav
             img
-                width: 40px
+                width: 50px
 
     main
         #banner
