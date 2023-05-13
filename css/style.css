@@ -1008,7 +1008,7 @@ section#refst {
     section#aboutContent .card-title {
       font-size: 1.2rem; }
     section#aboutContent .card img {
-      height: 215.404px; }
+      height: 276.948px; }
   section#aboutContent .cardrd .card-body {
     font-size: .65rem !important; }
   section#aboutContent .cardrd img {
@@ -1059,7 +1059,8 @@ section#refst {
   section#mycontact {
     height: 93vh; }
     section#mycontact .form_box {
-      width: 80%; }
+      width: 80%;
+      height: 90%; }
       section#mycontact .form_box .form_value form {
         grid-template-columns: repeat(1, 1fr);
         justify-items: center; }
@@ -1091,11 +1092,15 @@ section#refst {
     max-width: 450px; }
   footer {
     font-size: 1.2rem; }
+    footer .btna {
+      font-size: 1.5rem; }
     footer .container {
       max-width: 475px;
       grid-template-columns: 100%; }
       footer .container #footer_3 #mysocial {
         justify-content: space-around; }
+        footer .container #footer_3 #mysocial a i {
+          font-size: 2.8rem; }
       footer .container #footer_4 {
         grid-column: 1 / span 1; }
   @keyframes p1 {
@@ -1103,6 +1108,183 @@ section#refst {
       transform: translateY(0); }
     to {
       transform: translateY(-150px); } }
+  @keyframes t1 {
+    from {
+      transform: translateY(0); }
+    to {
+      transform: translateY(100px); } } }
+
+@media (max-width: 375px) {
+  html {
+    font-size: 10px; }
+  .container {
+    max-width: 360px; }
+  h2.baslik {
+    font-size: 2rem; }
+  header nav img {
+    width: 50px; }
+  main #banner {
+    margin-bottom: 1.5rem;
+    height: 35vh; }
+    main #banner #carouselExample {
+      height: 35vh; }
+      main #banner #carouselExample .carousel-inner .carousel-item img {
+        height: 35vh; }
+  main .swiper {
+    height: 31vh; }
+    main .swiper .swiper-slide .imgBox {
+      height: 25vh; }
+    main .swiper .swiper-slide .content {
+      height: 60px; }
+      main .swiper .swiper-slide .content h2 {
+        font-size: 1.3rem; }
+      main .swiper .swiper-slide .content span {
+        font-size: 1rem; }
+  #scrollPath,
+  #progressBar {
+    width: 5px; }
+  #profile .baslik {
+    font-size: 2rem; }
+  #profile .bosluk {
+    width: 12rem !important; }
+  #profile .yazi .yazialt {
+    font-size: 1.1rem; }
+  #profile #iconpart {
+    grid-template-columns: repeat(2, 1fr); }
+    #profile #iconpart div .first .second {
+      width: 10rem;
+      height: 10rem; }
+      #profile #iconpart div .first .second svg {
+        margin: 0; }
+  #content .my_icons {
+    flex-direction: column; }
+    #content .my_icons div.ficon, #content .my_icons div.sicon, #content .my_icons div.thicon, #content .my_icons div.licon {
+      width: 100%; }
+      #content .my_icons div.ficon div, #content .my_icons div.sicon div, #content .my_icons div.thicon div, #content .my_icons div.licon div {
+        margin-top: 4rem;
+        margin-bottom: 4rem; }
+    #content .my_icons div.licon {
+      order: 4; }
+  section#aboutContent .baslik {
+    font-size: 2rem; }
+  section#aboutContent .bosluk {
+    width: 6.6rem !important; }
+  section#aboutContent .card {
+    width: 96%;
+    margin-left: 2%; }
+    section#aboutContent .card-body {
+      font-size: 1rem; }
+    section#aboutContent .card-title {
+      font-size: 1.2rem; }
+    section#aboutContent .card img {
+      height: 153.86px; }
+  section#aboutContent .cardrd img {
+    height: 92.316px !important; }
+  section#aboutContent .cardbodyrd div {
+    font-size: .61rem !important; }
+    section#aboutContent .cardbodyrd div i {
+      font-size: 1.3rem; }
+  section#deneme {
+    margin-bottom: 8rem; }
+    section#deneme #tmain #tablet {
+      min-width: 306.31px;
+      max-width: 306.31px;
+      height: 199.06px;
+      border-radius: .7rem;
+      margin-left: 1rem;
+      box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.3); }
+      section#deneme #tmain #tabletInternal {
+        width: 299.31px;
+        height: 192.06px;
+        top: 3.5px;
+        left: 3.5px;
+        border-radius: .7rem; }
+    section#deneme #pmain #mobile {
+      height: 190.82px;
+      width: 97.1px;
+      border-width: 3px;
+      border-radius: .6rem;
+      left: 180px;
+      box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.3); }
+      section#deneme #pmain #mobileInternal {
+        height: 182.82px;
+        width: 89.1px;
+        top: 1px;
+        left: 1px;
+        border-radius: .6rem; }
+      section#deneme #pmain #mobileTop {
+        width: 40px;
+        height: 8px;
+        left: 46px; }
+  .boslukref {
+    width: 13.7rem !important; }
+  section#refst {
+    grid-template-columns: repeat(1, 1fr); }
+    section#refst .refbox {
+      width: 250px;
+      height: 250px; }
+      section#refst .refbox:hover {
+        height: 312.5px; }
+      section#refst .refbox .refimgbox img {
+        height: 218.75px; }
+      section#refst .refbox .refcontent {
+        height: 56.25px; }
+  section#mycontact {
+    height: 93vh; }
+    section#mycontact .form_box {
+      width: 85%;
+      height: 70%; }
+      section#mycontact .form_box .form_value form {
+        grid-template-columns: repeat(1, 1fr);
+        justify-items: center;
+        font-size: 1.3rem; }
+        section#mycontact .form_box .form_value form .inputbox {
+          margin: 1.5rem 0; }
+          section#mycontact .form_box .form_value form .inputbox ion-icon {
+            top: 7px; }
+        section#mycontact .form_box .form_value form h2 {
+          grid-column: 1 / span 1; }
+        section#mycontact .form_box .form_value form .textarea {
+          grid-column: 1 / span 1;
+          margin: 1.5rem 0;
+          width: 80%; }
+        section#mycontact .form_box .form_value form .buttonarea {
+          grid-column: 1 / span 1; }
+  section#contact_info div.cmain {
+    font-size: 1.6rem; }
+    section#contact_info div.cmain .container {
+      max-width: 450px;
+      flex-direction: column;
+      padding: 8rem 0; }
+      section#contact_info div.cmain .container #adress {
+        padding: 3rem 0; }
+      section#contact_info div.cmain .container #mobile {
+        padding: 3rem 2rem; }
+      section#contact_info div.cmain .container #email {
+        padding: 3rem 2rem;
+        font-size: 1.8rem; }
+      section#contact_info div.cmain .container div i {
+        font-size: 1.8rem; }
+  header .container {
+    max-width: 450px; }
+  footer {
+    font-size: 1.2rem; }
+    footer .btna {
+      font-size: 1.5rem; }
+    footer .container {
+      max-width: 475px;
+      grid-template-columns: 100%; }
+      footer .container #footer_3 #mysocial {
+        justify-content: space-around; }
+        footer .container #footer_3 #mysocial a i {
+          font-size: 2.8rem; }
+      footer .container #footer_4 {
+        grid-column: 1 / span 1; }
+  @keyframes p1 {
+    from {
+      transform: translateY(0); }
+    to {
+      transform: translateY(-125px); } }
   @keyframes t1 {
     from {
       transform: translateY(0); }
