@@ -657,7 +657,7 @@
         to
             transform: translateY(100px)
 
-@media (max-width: 375px)
+@media (max-width: 400px)
     html
         font-size: 10px
     
@@ -687,11 +687,13 @@
                             height: 35vh
             
         .swiper
-            height: 31vh
+            height: 32vh
+            width: 75%
 
             .swiper-slide
                 .imgBox
                     height: 25vh
+                    width: 100%
 
                 .content
                     height: 60px
@@ -772,7 +774,7 @@
                     font-size: 1.2rem
 
                 img
-                    height: .5 * $cardimageheight
+                    height: .45 * $cardimageheight
 
             .cardrd
 
@@ -788,13 +790,14 @@
 
         &#deneme
             margin-bottom: 8rem
+            
             #tmain
                 #tablet
                     min-width: ($tabletwidth * .33) + 7px
                     max-width: ($tabletwidth * .33) + 7px
                     height: ($tabletheight * .33) + 7px
                     border-radius: .7rem
-                    margin-left: 1rem
+                    margin-left: 3rem
                     box-shadow: 10px 10px 5px rgba(0, 0, 0, .3)
 
                     &Internal

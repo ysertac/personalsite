@@ -1118,7 +1118,7 @@ section#refst {
     to {
       transform: translateY(100px); } } }
 
-@media (max-width: 375px) {
+@media (max-width: 400px) {
   html {
     font-size: 10px; }
   .container {
@@ -1135,9 +1135,11 @@ section#refst {
       main #banner #carouselExample .carousel-inner .carousel-item img {
         height: 35vh; }
   main .swiper {
-    height: 31vh; }
+    height: 32vh;
+    width: 75%; }
     main .swiper .swiper-slide .imgBox {
-      height: 25vh; }
+      height: 25vh;
+      width: 100%; }
     main .swiper .swiper-slide .content {
       height: 60px; }
       main .swiper .swiper-slide .content h2 {
@@ -1185,7 +1187,7 @@ section#refst {
     section#aboutContent .card-title {
       font-size: 1.2rem; }
     section#aboutContent .card img {
-      height: 153.86px; }
+      height: 138.474px; }
   section#aboutContent .cardrd img {
     height: 92.316px !important; }
   section#aboutContent .cardbodyrd div {
@@ -1199,7 +1201,7 @@ section#refst {
       max-width: 306.31px;
       height: 199.06px;
       border-radius: .7rem;
-      margin-left: 1rem;
+      margin-left: 3rem;
       box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.3); }
       section#deneme #tmain #tabletInternal {
         width: 299.31px;
