@@ -3,34 +3,34 @@ var a1, a2, b1, b2, c1, c2, d1, d2, e1, e2, f1, f2, g1, g2, h1, h2, j1, j2, k1, 
 setInterval(function() {
     if (window.matchMedia("(min-width: 1025px)").matches) {
         a1 = Math.floor(Math.random() * 3000);
-        a2 = Math.floor(Math.random() * 1300);
+        a2 = Math.floor(Math.random() * 1200);
     
         b1 = Math.floor(Math.random() * 3000);
-        b2 = Math.floor(Math.random() * 1300);
+        b2 = Math.floor(Math.random() * 1200);
     
         c1 = Math.floor(Math.random() * 3000);
-        c2 = Math.floor(Math.random() * 1300);
+        c2 = Math.floor(Math.random() * 1200);
     
         d1 = Math.floor(Math.random() * 3000);
-        d2 = Math.floor(Math.random() * 1300);
+        d2 = Math.floor(Math.random() * 1200);
     
         e1 = Math.floor(Math.random() * 3000);
-        e2 = Math.floor(Math.random() * 1300);
+        e2 = Math.floor(Math.random() * 1200);
     
         f1 = Math.floor(Math.random() * 3000);
-        f2 = Math.floor(Math.random() * 1300);
+        f2 = Math.floor(Math.random() * 1200);
     
         g1 = Math.floor(Math.random() * 3000);
-        g2 = Math.floor(Math.random() * 1300);
+        g2 = Math.floor(Math.random() * 1200);
     
         h1 = Math.floor(Math.random() * 3000);
-        h2 = Math.floor(Math.random() * 1300);
+        h2 = Math.floor(Math.random() * 1200);
     
         j1 = Math.floor(Math.random() * 3000);
-        j2 = Math.floor(Math.random() * 1300);
+        j2 = Math.floor(Math.random() * 1200);
     
         k1 = Math.floor(Math.random() * 3000);
-        k2 = Math.floor(Math.random() * 1300);
+        k2 = Math.floor(Math.random() * 1200);
     
         document.querySelector('.wb1').style.top = `${a1}px`;
         document.querySelector('.wb1').style.left = `${a2}px`;
