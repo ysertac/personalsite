@@ -982,11 +982,15 @@ section#refst {
     font-size: 1.1rem; }
   #profile #iconpart {
     grid-template-columns: repeat(2, 1fr); }
-    #profile #iconpart div .first .second {
-      width: 10rem;
-      height: 10rem; }
-      #profile #iconpart div .first .second svg {
-        margin: 0; }
+    #profile #iconpart div .first {
+      margin-right: 1rem;
+      margin-left: 1rem; }
+      #profile #iconpart div .first .second {
+        width: 7rem;
+        height: 7rem; }
+        #profile #iconpart div .first .second svg {
+          margin: 0;
+          width: 3.5rem; }
   #content .my_icons {
     flex-direction: column; }
     #content .my_icons div.ficon, #content .my_icons div.sicon, #content .my_icons div.thicon, #content .my_icons div.licon {
